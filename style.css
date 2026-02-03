@@ -229,12 +229,6 @@ footer {
     color: #6b7280;
     margin-top: 40px;
 }
-.contact p {
-    text-align: center;
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    color: #374151;
-}
 
 @media (max-width: 768px) {
     header h1 {
