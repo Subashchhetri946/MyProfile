@@ -82,7 +82,6 @@ header p {
     border-radius: 30px;
     font-weight: 600;
     transition: all 0.25s ease;
-    margin-top: 20px;
 }   
 
 .btn:hover {
@@ -188,6 +187,13 @@ header p {
 .project-body a:hover {
     background: #2563eb;
     color: #fff;
+}
+
+.project-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 form {
