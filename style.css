@@ -82,6 +82,7 @@ header p {
     border-radius: 30px;
     font-weight: 600;
     transition: all 0.25s ease;
+    margin-top: 20px;
 }   
 
 .btn:hover {
@@ -132,40 +133,48 @@ header p {
     border-radius: 10px;
 
 }
-.projects-container {
+.projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 26px;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 
-.project {
+.project-card {
     background: #ffffff;
-
-    border-radius: 10px;
+    border-radius: 14px;
     overflow: hidden;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    padding: 20px;
 }
 
-.project:hover {
+.project-card:hover {
     transform: translateY(-8px);
 }
-.project img {
+.project-img {
     width: 100%;
-    height: 180px;
+    height: 170px;
     object-fit: cover;
+    display: block;
+}
+.project-body {
+    padding: 16px 18px 18px;
 }
 
-.project h3 {
-    margin: 16px;
-    font-size: 1.2rem;
+.project-body h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
 }   
-.project p {
+.project-body p {
     padding: 0 16px 16px;
     color: #4b5563;
+    line-height: 1.4;
 }
 
-.project a {
+.project-body a {
     display: inline-block;
     margin: 0 16px 20px;
     padding: 10px 16px;
@@ -176,7 +185,7 @@ header p {
     transition: all 0.3s ease;
 }
 
-.project a:hover {
+.project-body a:hover {
     background: #2563eb;
     color: #fff;
 }
@@ -222,12 +231,23 @@ form button:hover {
     background: #2563eb;
 }
 
+#contact p {
+    text-align: center;
+    color: #4b5563;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
 footer {
     background: #f1f5f9;
     text-align: center;
     padding: 24px;
     color: #6b7280;
     margin-top: 40px;
+}
+footer p {
+    font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
