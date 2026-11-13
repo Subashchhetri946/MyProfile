@@ -2,31 +2,44 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
+    background: #edf3f7;
+    color: #1f3349;
 }
 
 main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 48px 20px 80px;
+    max-width: 1140px;
+    margin: auto;
+    padding: 45px 28px 95px;
 }
 
 a {
-    color: #2563eb;
+    color: #2169bd;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .back-link {
     display: inline-block;
-    margin-bottom: 32px;
+    margin-bottom: 25px;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 14px;
 }
 
 .label {
     color: #2563eb;
     font-weight: bold;
 }
+
 
 h1 {
     font-size: clamp(2rem, 5vw, 3.5rem);
